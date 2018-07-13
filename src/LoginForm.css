@@ -1,0 +1,23 @@
+body {
+  height: 100vh;
+}
+.LoginForm {
+  max-width: 300px;
+  margin: auto;
+  margin-top: 25vh;
+  padding: 25px;
+  border: solid 2px black;
+  border-radius: 10px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.btn {
+  border: solid 1px black;
+  margin: 10px;
+}
+
+input {
+  margin-bottom: 10px;
+}
