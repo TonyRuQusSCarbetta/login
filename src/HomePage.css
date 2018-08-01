@@ -1,0 +1,15 @@
+/* .flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.signOut {
+  padding-top: 20%;
+  padding-right: 15%;
+  cursor: pointer;
+}
+
+.signOut:hover {
+  color: white;
+}
