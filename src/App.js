@@ -7,12 +7,12 @@ class App extends Component {
 constructor() {
   super()
   this.state={
-    route: 'signin'
+    route: SignIn
   }
 }
 
-onRouteChange = () => {
-  this.setState({route: 'home'})
+onRouteChange = (route) => {
+  this.setState({route: route})
 }
 
   render() {
@@ -20,9 +20,9 @@ onRouteChange = () => {
       <div className="App">
 
         {
-          this.state.route === 'signin'
+          this.state.route === SignIn
           ? <SignIn onRouteChange={this.onRouteChange}/>
-          : <HomePage/>
+          : <HomePage onRouteChange={this.onRouteChange}/>
         }
 
       </div>

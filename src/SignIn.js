@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './SignIn.css';
+import HomePage from './HomePage';
 
 //retrieve the value of user's input from form
 // target the value and push it into empty arrow by setting the state
@@ -38,7 +39,7 @@ class SignIn extends Component {
 
               <div
               className="btn"
-              onClick={this.props.onRouteChange}>
+              onClick={() => this.props.onRouteChange(HomePage)}>
               login
               </div>
 

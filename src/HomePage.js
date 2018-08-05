@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './HomePage.css'
+import SignIn from './SignIn'
 
 class HomePage extends Component {
   constructor() {
@@ -17,7 +18,7 @@ class HomePage extends Component {
           </div>
           <div className="col-1 bg-success">
           <p className="signOut"
-          onClick={this.props.onRouteChange}>Sign Out</p>
+          onClick={() => this.props.onRouteChange(SignIn)}>Sign Out</p>
           </div>
         </div>
     );
