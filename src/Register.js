@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import './SignIn.css';
 import HomePage from './HomePage';
-import Register from './Register';
 
 //retrieve the value of user's input from form
 // target the value and push it into empty arrow by setting the state
 
-class SignIn extends Component {
+class Register extends Component {
   constructor() {
     super()
     this.state= {
@@ -29,12 +28,17 @@ class SignIn extends Component {
           <div className="col-12">
             <div className="SignIn">
 
-              <h1>Sign In</h1>
-              
+              <h1>Register</h1>
+
               <input type="text"
-              ref="userName"
+              ref="Name"
               onChange={this.Change}
-              placeholder="User Name"/><br/>
+              placeholder="Name"/><br/>
+
+              <input type="email"
+              ref="email"
+              onChange={this.Change}
+              placeholder="Email"/><br/>
 
               <input type="text"
               ref="userPassword"
@@ -42,15 +46,12 @@ class SignIn extends Component {
 
               <div
               className="btn"
-              onClick={() => this.props.onRouteChange(HomePage)}>
-              login
+              onClick={() => this.props.onRouteChange(HomePage)}
+              type="submit">
+              Submit
               </div>
 
-              <div
-              className="btn"
-              onClick={() => this.props.onRouteChange(Register)}>
-              register
-              </div>
+
 
             </div>
         </div>
@@ -59,4 +60,4 @@ class SignIn extends Component {
   }
 }
 
-export default SignIn;
+export default Register;
